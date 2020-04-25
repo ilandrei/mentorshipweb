@@ -1,0 +1,17 @@
+.home-container{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/background.jpg');
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    width: 20%;
+}
+.content{
+    height: 100%;
+    width: 80%;
+    background-color:rgba(0, 0, 0, 0.90);
+}
