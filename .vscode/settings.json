@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/757c7b85-3b2e-4ebb-8d45-b642f2145359/resourceGroups/Mentorship-resource/providers/Microsoft.Web/sites/Mentorship-CC",
+    "appService.deploySubpath": ""
+}

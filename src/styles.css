@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+
+    color: white;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+h1{
+    font-weight: 700;
+    font-size: 28;
+}
+h2{
+    font-weight: 500;
+    font-size: 24;
+}
