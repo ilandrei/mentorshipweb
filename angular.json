@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "MentorshipWeb"
+    }
+  },
+  "defaultProject": "MentorshipWeb",
+  "cli": {
+    "analytics": "4640e6be-a1ee-4322-8869-f0c4831332c5"
+  }
 }

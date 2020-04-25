@@ -6,13 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { SidebarComponent } from './sidebar/sidebar.component'
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { AddListingComponent } from './add-listing/add-listing.component';
+import { DisplayListingComponent } from './display-listing/display-listing.component'
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    AddListingComponent,
+    DisplayListingComponent,
+    AddListingComponent,
+    DisplayListingComponent
   ],
   imports: [
     BrowserModule,
