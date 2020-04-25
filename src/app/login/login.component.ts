@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit {
   loginMode: boolean = true;
   registerError: string = "";
   loginError: string = "";
-  pageTitle: String = "Login";
+  pageTitle: String = "Loginn";
 
   loginForm = new FormGroup({
     loginEmail: new FormControl('', [
