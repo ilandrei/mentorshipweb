@@ -52,6 +52,7 @@
     font-weight: 700px;
     user-select:none;
     cursor: pointer;
+    color:white;
 }
 .item:hover{
     background-color:rgba(0,0,0,0.3);
