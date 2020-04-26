@@ -35,8 +35,8 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     MsAdalAngular6Module.forRoot({
       tenant: '3936c37a-9422-4a0b-8cfc-3b540ffdd1c1',
       clientId: '50d4fa9e-c462-4a7e-b577-5b8bf2ee88e9',
-      // redirectUri: 'https://mentorship-cc.azurewebsites.net/home',
-      redirectUri: 'http://localhost:4200/home',
+      redirectUri: 'https://mentorship-cc.azurewebsites.net/home',
+      // redirectUri: 'http://localhost:4200/home',
       endpoints: {
         'api application url': 'api application client id', // this is for feteching the access token
       },
