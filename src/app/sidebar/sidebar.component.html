@@ -1,13 +1,13 @@
 <div class="content">
 
-    <div class="option-container">
-        <div class="logo-container">
-            <img src="../../assets/logo.png" class="logo-image" style="width:80%;user-select: none;">
-        </div>
-        <div class="item" (click)="clickedHome()">Home</div>
-        <div class="item" (click)="clickedExplore()">Explore</div>
-        <div class="item" (click)="clickedSearch()">Search</div>
-        <div class="item" (click)="clickedAdd()">Add listing</div>
+  <div class="option-container">
+    <div class="logo-container">
+      <img src="../../assets/logo.png" class="logo-image" style="width:80%;user-select: none;">
     </div>
-    <div class="profile-button" (click)="clickedProfile()">Profile </div>
+    <div class="item" (click)="clickedHome()">Home</div>
+    <div class="item" (click)="clickedExplore()">Explore</div>
+    <div class="item" (click)="clickedSearch()">Search</div>
+    <div class="item" (click)="clickedAdd()">Add listing</div>
+  </div>
+  <div class="profile-button" (click)="clickedProfile()">{{this.userName}} </div>
 </div>

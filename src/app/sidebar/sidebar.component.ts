@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { MsAdalAngular6Service } from 'microsoft-adal-angular6';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,10 +8,13 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   @Output() changed = new EventEmitter<string>();
+  userName: String = "Profile";
 
-  constructor() { }
+  constructor(private authService: MsAdalAngular6Service) { }
 
   ngOnInit() {
+    this.userName = this.authService.LoggedInUserName ? this.authService.LoggedInUserName : this.authService.LoggedInUserEmail;
+    console.log(this.authService.userInfo);
   }
 
   clickedHome() {

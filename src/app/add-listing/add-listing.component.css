@@ -1,0 +1,73 @@
+.content-container{
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form-entry{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.entry-input{
+  margin-bottom: 10px;
+  border:none;
+  background-color:#272727;
+  border-radius: 5px;
+  height: 50px;
+  padding: 0px 10px;
+  font-size: 15px;
+  color: lightgray;
+  box-shadow:inset 2px 2px 3px  rgba(0, 0, 0, 0.8), inset -1px -1px 3px  rgba(224, 224, 224, 0.2);
+}
+.entry-input-description{
+  margin-bottom: 10px;
+  border:none;
+  background-color:#272727;
+  border-radius: 5px;
+  height: 50px;
+  padding: 0px 10px;
+  font-size: 15px;
+  color: lightgray;
+  box-shadow:inset 2px 2px 3px  rgba(0, 0, 0, 0.8), inset -1px -1px 3px  rgba(224, 224, 224, 0.2);
+  height:200px;
+  padding-top: 10px;
+}
+.entry-input-latlng{
+  margin-bottom: 10px;
+  width:20%;
+  border:none;
+  background-color:#272727;
+  border-radius: 5px;
+  height: 50px;
+  padding: 0px 10px;
+  font-size: 15px;
+  color: lightgray;
+  box-shadow:inset 2px 2px 3px  rgba(0, 0, 0, 0.8), inset -1px -1px 3px  rgba(224, 224, 224, 0.2);
+}
+.add-button{
+  margin-top:20px;
+  width: 200px;
+  height: 50px;
+  background: #642B73;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border:none;
+  border-radius: 5px;
+  color:white;
+  font-weight: lighter;
+  font-size: 20px;
+  box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.6),  -1px -1px 3px  rgba(224, 224, 224, 0.2);
+  cursor: pointer;
+}
+
+label{
+  margin-left: 6px;
+  color:lightgrey;
+  font-size: 10px;
+}

@@ -1,26 +1,27 @@
-<form>
-	<div>
-		<label for="title">Title</label>
-		<input type="text" id="title" name="title" [(ngModel)]="title">
-	</div>
+<div class="content-container">
+  <div class="page-title">Add listing</div>
+  <div class="form-entry">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" [(ngModel)]="title" class="entry-input" placeholder="Title">
+  </div>
 
-	<div>
-		<label for="description">Description</label>
-		<input type="text" id="description" name="description" [(ngModel)]="description">
-	</div>
+  <div class="form-entry">
+    <label for="description">Description</label>
+    <textarea id="description" name="description" [(ngModel)]="description" class="entry-input-description"
+      placeholder="Description">
+    </textarea>
+  </div>
 
-	<div>
-		<label for="latitude">Latitude</label>
-		<input type="text" id="latitude" name="latitude" [(ngModel)]="latitude">
-	</div>
+  <div class="form-entry">
+    <label for="latitude">Latitude</label>
+    <input type="text" id="latitude" name="latitude" [(ngModel)]="latitude" class="entry-input-latlng"
+      placeholder="Latitude">
+  </div>
 
-	<div>
-		<label for="longitude">Longitude</label>
-		<input type="text" id="longitude" name="longitude" [(ngModel)]="longitude">
-	</div>
-
-	<div>
-		<button type="submit" (click)="addUser()">Add</button>
-	</div>
-
-</form>
+  <div class="form-entry">
+    <label for="longitude">Longitude</label>
+    <input type="text" id="longitude" name="longitude" [(ngModel)]="longitude" class="entry-input-latlng"
+      placeholder="Longitude">
+  </div>
+  <button type="submit" (click)="addUser()" class="add-button">Add</button>
+</div>
