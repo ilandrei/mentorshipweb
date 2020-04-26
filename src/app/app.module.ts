@@ -9,6 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AddListingComponent } from './add-listing/add-listing.component';
 import { DisplayListingComponent } from './display-listing/display-listing.component'
+import { MsAdalAngular6Module } from 'microsoft-adal-angular6';
+import { AuthStatus } from './services/AuthStatus';
+
+const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +30,19 @@ import { DisplayListingComponent } from './display-listing/display-listing.compo
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    MsAdalAngular6Module.forRoot({
+      tenant: '3936c37a-9422-4a0b-8cfc-3b540ffdd1c1',
+      clientId: '50d4fa9e-c462-4a7e-b577-5b8bf2ee88e9',
+      redirectUri: 'https://mentorship-cc.azurewebsites.net/home',
+      endpoints: {
+        'api application url': 'api application client id', // this is for feteching the access token  
+      },
+      navigateToLoginRequestUrl: false,
+      cacheLocation: '<localStorage / sessionStorage>',
+      postLogoutRedirectUri: 'https://mentorship-cc.azurewebsites.net/login',
+    }),
   ],
-  providers: [],
+  providers: [AuthStatus],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

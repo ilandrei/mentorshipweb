@@ -4,39 +4,8 @@
     </div>
 
     <div class="login-container">
-        <div class="login-text">
-            <h2>{{this.pageTitle}}</h2>
-        </div>
-
         <div class="login-form">
-            <ng-container *ngIf="loginMode;else registerMode">
-                <form [formGroup]="loginForm">
-                    <input type="email" formControlName="loginEmail" class="login-text-input" placeholder="Email">
-                    <input type="password" formControlName="loginPassword" class="login-text-input"
-                        placeholder="Password">
-
-                </form>
-                <input type="button" value="Login" class="login-button" (click)="login()">
-                <input type="button" value="Register" class="register-button" (click)="registerPressed()">
-            </ng-container>
+            <input type="button" value="Login" class="login-button" (click)="login()">
         </div>
-        <ng-container *ngIf="loginMode">
-            <p class="error-message">{{this.loginError}}</p>
-        </ng-container>
-        <ng-container *ngIf="!loginMode">
-            <p class="error-message">{{this.registerError}}</p>
-        </ng-container>
     </div>
 </div>
-
-<ng-template #registerMode>
-    <form [formGroup]="registerForm">
-        <input type="email" formControlName="registerEmail" class="login-text-input" placeholder="Email">
-        <input type="password" formControlName="registerPassword" class="login-text-input" placeholder="Password">
-        <input type="password" formControlName="registerPasswordConfirm" class="login-text-input"
-            placeholder="Confirm password">
-
-    </form>
-    <input type="button" value="Register" class="login-button" (click)="register()">
-    <input type="button" value="Cancel" class="register-button" (click)="registerCancel()">
-</ng-template>
