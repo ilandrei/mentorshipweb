@@ -18,6 +18,11 @@ export class AddListingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        console.log(position.coords);
+      });
+    }
   }
 
   async addUser() {

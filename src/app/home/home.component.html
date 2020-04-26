@@ -1,21 +1,21 @@
 <div class="home-container">
-    <app-sidebar class="sidebar" (changed)="onChanged($event)"></app-sidebar>
-    <div class="content">
-        <ng-container *ngIf="this.item=='homescreen'||this.item==''">
-            <p>homescreen</p>
-        </ng-container>
-        <ng-container *ngIf="this.item=='addlisting'">
-          <add-listing></add-listing>
-        </ng-container>
-        <ng-container *ngIf="this.item=='profile'">
-            <p>profile</p>
-        </ng-container>
-        <ng-container *ngIf="this.item=='explore'">
-            <p>explore</p>
-        </ng-container>
-        <ng-container *ngIf="this.item=='search'">
-            <p>search</p>
-        </ng-container>
-    </div>
+  <app-sidebar class="sidebar" (changed)="onChanged($event)"></app-sidebar>
+  <div class="content">
+    <ng-container *ngIf="this.item=='homescreen'||this.item==''">
+      <p>homescreen</p>
+    </ng-container>
+    <ng-container *ngIf="this.item=='addlisting'">
+      <add-listing></add-listing>
+    </ng-container>
+    <ng-container *ngIf="this.item=='profile'">
+      <p>profile</p>
+    </ng-container>
+    <ng-container *ngIf="this.item=='explore'">
+      <p>explore</p>
+    </ng-container>
+    <ng-container *ngIf="this.item=='search'">
+      <app-search></app-search>
+    </ng-container>
+  </div>
 
 </div>

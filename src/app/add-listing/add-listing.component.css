@@ -17,7 +17,7 @@
 .entry-input{
   margin-bottom: 10px;
   border:none;
-  background-color:#272727;
+  background-color:rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   height: 50px;
   padding: 0px 10px;
@@ -28,7 +28,7 @@
 .entry-input-description{
   margin-bottom: 10px;
   border:none;
-  background-color:#272727;
+  background-color:rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   height: 50px;
   padding: 0px 10px;
@@ -42,7 +42,8 @@
   margin-bottom: 10px;
   width:20%;
   border:none;
-  background-color:#272727;
+
+  background-color:rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   height: 50px;
   padding: 0px 10px;
@@ -54,9 +55,7 @@
   margin-top:20px;
   width: 200px;
   height: 50px;
-  background: #642B73;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: rgba(61, 80, 255, 0.623);
   border:none;
   border-radius: 5px;
   color:white;

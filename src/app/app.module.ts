@@ -11,6 +11,7 @@ import { AddListingComponent } from './add-listing/add-listing.component';
 import { DisplayListingComponent } from './display-listing/display-listing.component'
 import { MsAdalAngular6Module } from 'microsoft-adal-angular6';
 import { AuthStatus } from './services/AuthStatus';
+import { SearchComponent } from './search/search.component';
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
 
@@ -23,7 +24,8 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     AddListingComponent,
     DisplayListingComponent,
     AddListingComponent,
-    DisplayListingComponent
+    DisplayListingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

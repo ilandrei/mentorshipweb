@@ -1,0 +1,59 @@
+.content-container{
+  width: 100%;
+  margin-top:80px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.search-input{
+  height: 80px;
+  background-color: rgba(0,0,0,0.2);
+  text-align: end;
+  font-size: 24px;
+  font-weight: lighter;
+  color:lightgrey;
+  width: 80%;
+  box-sizing: border-box;
+  padding-right: 50px;
+  position: absolute;
+  top:0;
+}
+
+.listings-container{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listing-container{
+  margin-bottom: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px 25px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  user-select: none;
+  cursor: pointer;
+}
+.listing-title{
+  font-size: 24px;
+  font-weight: 700;
+}
+.listing-author{
+  font-size: 12px;
+  font-weight: bold;
+  color:grey;
+}
+.listing-description{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color:lightgrey;
+}
