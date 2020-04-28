@@ -36,9 +36,9 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     MsAdalAngular6Module.forRoot({
       tenant: '3936c37a-9422-4a0b-8cfc-3b540ffdd1c1',
       clientId: 'f0dbf35d-7ad6-4b38-a435-0764304ea8cf',
-      // redirectUri: 'https://mentorship-cc.azurewebsites.net/home',
+      redirectUri: 'https://mentorship-cc.azurewebsites.net/home',
       authority: 'https://login.microsoftonline.com/consumers/',
-      redirectUri: 'http://localhost:4200/home',
+      // redirectUri: 'http://localhost:4200/home',
 
       validateAuthority: true,
       navigateToLoginRequestUrl: false,
