@@ -6,13 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { AddListingComponent } from './add-listing/add-listing.component';
-import { DisplayListingComponent } from './display-listing/display-listing.component'
+import { SidebarComponent } from './home/sidebar/sidebar.component';
+import { AddListingComponent } from './home/add-listing/add-listing.component';
 import { MsAdalAngular6Module } from 'microsoft-adal-angular6';
-// import { AuthStatus } from './services/AuthStatus';
-import { MsalModule } from "@azure/msal-angular";
-import { SearchComponent } from './search/search.component';
+import { SearchComponent } from './home/search/search.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeModule } from './home/home.module';
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
 
@@ -23,16 +22,15 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     HomeComponent,
     SidebarComponent,
     AddListingComponent,
-    DisplayListingComponent,
-    AddListingComponent,
-    DisplayListingComponent,
     SearchComponent
   ],
   imports: [
+    HomeModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     MsAdalAngular6Module.forRoot({
       tenant: '3936c37a-9422-4a0b-8cfc-3b540ffdd1c1',
       clientId: 'f0dbf35d-7ad6-4b38-a435-0764304ea8cf',

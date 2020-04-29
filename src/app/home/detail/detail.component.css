@@ -1,0 +1,55 @@
+
+.header{
+  height: 80px;
+  background-color: rgba(61, 80, 255, 0.527);
+
+  font-weight: lighter;
+  color:white;
+  width: 80vw;
+  box-sizing: border-box;
+  padding-right: 100px;
+  position: absolute;
+  top:0;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 40px;
+  user-select: none;
+}
+.back-button{
+  color: lightgrey;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header-title-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-title{
+  font-size: 28px;
+  font-weight: 500;
+}
+.header-author{
+  font-size: 28px;
+  font-weight: lighter;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.map-container{
+  height: 350px;
+}
+.description-container{
+  margin-top: 25px;
+font-size: 24px;
+}

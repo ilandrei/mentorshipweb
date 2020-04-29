@@ -1,0 +1,19 @@
+<ng-container *ngIf="!!this.listing">
+
+  <div class="header">
+    <div class="back-button" routerLink="../">Back</div>
+    <div class="header-title-container">
+      <div class="header-title">{{this.listing.title}}</div>
+      <div class="header-author">by {{this.listing.authorName}}</div>
+    </div>
+
+  </div>
+  <div class="page-content">
+    <div class="map-container">
+      map will be here
+    </div>
+    <div class="description-container">
+      {{this.listing.description}}
+    </div>
+  </div>
+</ng-container>
