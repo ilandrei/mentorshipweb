@@ -58,6 +58,7 @@ background: linear-gradient(to left, rgba(255, 255, 255,0.5), rgb(236, 233, 230,
   position: absolute;
   top:0;
   backdrop-filter: blur(5px);
+  border:none;
 
 }
 .search-input::placeholder{

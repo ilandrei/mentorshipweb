@@ -20,6 +20,8 @@ export class DetailComponent implements OnInit {
       this.id = params['id'];
       this.listingService.getListing(this.id).subscribe((listing) => {
         this.listing = listing[0];
+        localStorage.setItem('latitude', this.listing.latitude)
+        localStorage.setItem('longitude', this.listing.longitude)
         console.log(this.listing)
       })
     });
@@ -27,7 +29,5 @@ export class DetailComponent implements OnInit {
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
-
-
 }
 

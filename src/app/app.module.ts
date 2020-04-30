@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailComponent } from './detail/detail.component';
 import { ListingsService } from './services/listings.service';
+import { MapComponent } from './map/map.component';
 
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
@@ -25,7 +26,8 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     SidebarComponent,
     AddListingComponent,
     SearchComponent,
-    DetailComponent
+    DetailComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
