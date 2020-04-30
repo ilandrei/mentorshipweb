@@ -3,7 +3,7 @@ import * as Mongoose from "mongoose";
 import { Listing } from '../models/listing.model';
 import { MsAdalAngular6Service } from 'microsoft-adal-angular6';
 import { ListingsService } from '../services/listings.service';
-
+import { ToastrService } from 'ngx-toastr';
 let database: Mongoose.Connection;
 
 @Component({
@@ -18,7 +18,7 @@ export class AddListingComponent implements OnInit {
   latitude = ''
   longitude = ''
 
-  constructor(private authService: MsAdalAngular6Service, private listingService: ListingsService) { }
+  constructor(private authService: MsAdalAngular6Service, private listingService: ListingsService, private toastr: ToastrService) { }
 
   ngOnInit() {
     // if (navigator.geolocation) {
@@ -29,6 +29,7 @@ export class AddListingComponent implements OnInit {
   }
 
   async addUser() {
+
     const listingToAdd: Listing = {
       _id: '1',
       title: this.title,
@@ -38,7 +39,7 @@ export class AddListingComponent implements OnInit {
       authorName: this.authService.LoggedInUserName,
       authorid: this.authService.LoggedInUserEmail
     }
-    this.listingService.postListing(listingToAdd).subscribe(() => console.log('added'));
+    this.listingService.postListing(listingToAdd).subscribe(() => this.toastr.success('Added', 'Your post was added'));
   }
 
 }
