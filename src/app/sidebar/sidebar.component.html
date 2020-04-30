@@ -6,8 +6,8 @@
     </div>
     <div class="item" (click)="clickedHome()">Home</div>
     <div class="item" (click)="clickedExplore()">Explore</div>
-    <div class="item" (click)="clickedSearch()" routerLink="">Search</div>
-    <div class="item" (click)="clickedAdd()" routerLink="/add">Add listing</div>
+    <div class="item" (click)="clickedSearch()" routerLink="/search">Search</div>
+    <div class="item" (click)="clickedAdd()" routerLink="home/add">Add listing</div>
   </div>
   <div class="profile-button" (click)="clickedProfile()">{{this.userName}} </div>
 </div>

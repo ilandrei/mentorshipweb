@@ -12,9 +12,10 @@ export class DetailComponent implements OnInit {
   id: string = "";
   listing: Listing;
   sub: any;
-  constructor(private route: ActivatedRoute, private listingService: ListingsService) { }
+  constructor(private route: ActivatedRoute, private listingService: ListingsService) { console.log('a') }
 
   ngOnInit() {
+
     this.sub = this.route.params.subscribe(params => {
       this.id = params['id'];
       this.listingService.getListing(this.id).subscribe((listing) => {
@@ -29,3 +30,4 @@ export class DetailComponent implements OnInit {
 
 
 }
+

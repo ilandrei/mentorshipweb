@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as Mongoose from "mongoose";
-import { Listing } from '../../models/listing.model';
+import { Listing } from '../models/listing.model';
 import { MsAdalAngular6Service } from 'microsoft-adal-angular6';
-import { ListingsService } from '../../services/listings.service';
+import { ListingsService } from '../services/listings.service';
 
 let database: Mongoose.Connection;
 

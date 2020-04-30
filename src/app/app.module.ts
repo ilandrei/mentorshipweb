@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { SidebarComponent } from './home/sidebar/sidebar.component';
-import { AddListingComponent } from './home/add-listing/add-listing.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { AddListingComponent } from './add-listing/add-listing.component';
 import { MsAdalAngular6Module } from 'microsoft-adal-angular6';
-import { SearchComponent } from './home/search/search.component';
+import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HomeModule } from './home/home.module';
+import { DetailComponent } from './detail/detail.component';
+import { ListingsService } from './services/listings.service';
+
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
 
@@ -22,10 +24,10 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     HomeComponent,
     SidebarComponent,
     AddListingComponent,
-    SearchComponent
+    SearchComponent,
+    DetailComponent
   ],
   imports: [
-    HomeModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
@@ -44,7 +46,7 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
       postLogoutRedirectUri: 'https://mentorship-cc.azurewebsites.net/login',
     }),
   ],
-  providers: [],
+  providers: [ListingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

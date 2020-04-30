@@ -3,7 +3,7 @@
 <div class="content-container">
   <div class="listings-container">
     <ng-container *ngIf="showingListings.length!=0">
-      <div *ngFor="let listing of showingListings" class="listing-container" [routerLink]="['/listing',listing._id]">
+      <div *ngFor="let listing of showingListings" class="listing-container" routerLink="/home/listing/{{listing._id}}">
         <div class="listing-title">{{listing.title}}</div>
         <div class="listing-author">by {{listing.authorName}}</div>
         <div class="listing-description">{{listing.description}}</div>

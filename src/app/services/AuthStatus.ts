@@ -1,4 +1,4 @@
-import { CanActivate, Router } from '@angular/router';
+import { CanActivate, Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { MsAdalAngular6Service } from 'microsoft-adal-angular6';
 import { Injectable } from '@angular/core';
 
@@ -10,10 +10,9 @@ export class AuthStatus implements CanActivate {
   constructor(private authService: MsAdalAngular6Service, private router: Router) { }
 
 
-  canActivate() {
+  canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
 
     if (this.authService.isAuthenticated) { return true; }
-    this.router.navigate(['/login']);
-    return false;
+    return this.router.parseUrl('login');
   }
 }
